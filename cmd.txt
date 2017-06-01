@@ -1,0 +1,20 @@
+# HELLO WORLD
+docker pull hello-world
+
+docker run hello-world
+
+# HELLO WOLRD NODE
+docker build -t bic/node-hello-world .
+
+docker images
+
+docker run -p 8081:8080 --rm --name bic-node bic/node-hello-world
+
+docker ps
+
+docker logs [ID]
+
+# FROM HUB
+docker pull mberthouzoz/node-hello-world
+
+docker run -p 8082:8080 --rm --name mberthouzoz-node mberthouzoz/node-hello-world
